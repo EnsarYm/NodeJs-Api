@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Node Api with express & mongoose",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnsarYm/NodeJs-Api.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Mongoose",
+    "expressjs",
+    "api"
+  ],
+  "author": "Ensar Yaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnsarYm/NodeJs-Api/issues"
+  },
+  "homepage": "https://github.com/EnsarYm/NodeJs-Api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  }
+}
