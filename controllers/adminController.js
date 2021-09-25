@@ -8,5 +8,5 @@ exports.addPost = async (req , res , next) => {
         res.json(result);
     }catch(err){
         console.log(err);
-    }
+    } 
 }
