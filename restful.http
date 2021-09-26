@@ -1,0 +1,16 @@
+@BASE_URL = http://localhost:3000
+
+GET {{BASE_URL}}
+
+###
+GET {{BASE_URL}}/61508778bb15ade5c9413d0e
+
+###
+POST {{BASE_URL}}/admin/post/add
+Content-Type: application/json
+
+{
+    "title": "post",
+    "description": "Desc1",
+    "imageUrl": "1.png"
+}

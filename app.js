@@ -3,6 +3,12 @@ const express = require('express');
 const app = express();
 // CALL DATABASE
 const db = require('./database/db');
+// Calling path
+const path = require('path');
+// IMPORTANT******
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 // INSERT ROUTES
 const indexRouter = require('./routes/indexRouter');
 const adminRouter = require('./routes/adminRouter');

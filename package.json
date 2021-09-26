@@ -24,6 +24,7 @@
   "homepage": "https://github.com/EnsarYm/NodeJs-Api#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-validator": "^6.12.1",
     "mongoose": "^6.0.7"
   }
 }

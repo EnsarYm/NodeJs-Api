@@ -1,13 +1,29 @@
-exports.getHomePage = (req , res , next) => {
-    res.json({
-        message: 'Welcome To Homepage'
-    })
+const POST = require('../models/postModel');
+
+// Getting All POSTS
+exports.getHomePage = async (req , res , next) => {
+    try{
+        const AllPosts = await POST.find({});
+        res.json(AllPosts);
+    }catch(err){
+        console.log(err);
+    }
+    
+    
 }
 
-exports.getPage = (req , res , next) => {
-    id = req.params.id;
-    res.json({
-        message: 'u looking ' + id + ' POST'
-    })
+// Get POST ID
+exports.getPage = async (req , res , next) => {
+    try{
+        const result = await POST.findById({_id:req.params.id});
+        if(result){
+            return res.json({
+                message: 'That Post Here ' + result.title
+            })
+        }
+    }catch(err){
+        console.log(err);
+    }
 }
+
 
